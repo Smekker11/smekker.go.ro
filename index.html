@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title id="title" >SMEKKER.GA TEST PAGE</title>
+</head>
+<body>
+<canvas id="HUDcanvas" width="200" height="500" style="border:6px solid #000000"></canvas>
+<style>
+body {
+  background-image: url('coffee-bean.bmp');
+}
+h1 {
+  position: absolute;
+  left: 222px;
+  top: 0px;
+}
+canvas {
+  position: absolute;
+  top: 20px;
+}
+#p1 {
+  position: absolute;
+  left: 222px;
+  top: 40px;
+}
+h2 {
+  position: absolute;
+  left: 15px;
+  top: 20px;
+}
+#p3 {
+  position: absolute;
+  left: 10px;
+  top: 520px;
+}
+#p4 {
+  position: absolute;
+  left: 10px;
+  top: 540px;
+}
+#p5 {
+  position: absolute;
+  left: 10px;
+  top: 560px;
+}
+#p2 {
+  position: absolute;
+  left: 222px;
+  top: 60px;
+}
+h3 {
+  position: absolute;
+  left: 15px;
+  top: 40px;
+}
+#a1 {
+  position: absolute;
+  left: 15px;
+  top: 75px;
+}
+#p6 {
+  position: absolute;
+  left: 15px;
+  top: 100px;
+}
+#testmail {
+  position: absolute;
+  left: 15px;
+  top: 110px;
+}
+#p7 {
+  position: absolute;
+  left: 15px;
+  top: 130px;
+}
+#testpass {
+  position: absolute;
+  left: 15px;
+  top: 140px;
+}
+#a2 {
+  position: absolute;
+  left: 15px;
+  top: 170px;
+}
+#a3 {
+  position: absolute;
+  left: 15px;
+  top: 190px;
+}
+#p10 {
+  position: absolute;
+  left: 15px;
+  top: 200px;
+}
+#a4 {
+  position: absolute;
+  left: 15px;
+  top: 230px;
+}
+#b1 {
+  position: absolute;
+  left: 15px;
+  top: 505px;
+}
+</style>
+
+<h1 id="h1" style="color:yellow;" >This is the smekker.ga test page</h1>
+<p id="p1" style="color:yellow;" >Attention some links include the HTTPS protocol</p>
+<p id="p2" style="color:yellow;" >ALL OF OUR HTTPS HAVE SELF-SIGNED CERTIFICATE SO THEY MAY APPEAR AS UNSAFE</p>
+<h2 style="color:red; font-size:16px;" >CURRENT IP:86.126.244.97</h2>
+<p id="p3" style="color:red; font-size:15px;" >if smekker.ga is offline try smekker.go.ro</p>
+<p id="p4" style="color:red; font-size:15px;" >URGENT DOWNAGE REPORTS: mekkerdavid@gmail.com</p>
+<p id="p5" style="color:red; font-size:15px;" >SERVER SUGGESTIONS AND BUG REPORTING: smekker11@smekker.ga</p>
+<button id="b1" style="size:50px;" type="button" onclick='titleMovmento();'>titleMovmento();</button>
+<h3 style="color:orange; font-size:16px;" >IMPORTANT LINKS:</h3>
+<a id="a1"  style="font-size:20px; color:orange;" href="https://smekker.ga:778">SMEKKER.GA MAIL</a>
+<p id="p6" style="font-size:12px; color:orange;" >DEFAULT TEST LOGIN FOR MAIL:</p>
+<p id="testmail" style="font-size:12px; color:orange;">test@smekker.ga</p>
+<p id="p7" style="font-size:12px; color:orange;" >DEFAULT TEST PASSWORD:</p>
+<p id="testpass" style="font-size:12px; color:orange;">Smekker@mail710</p>
+<a id="a2" style="color:#8cff66; font-size:14px" href="https://smekker.ga:420">iDRAC DELL MANAGEMENT</a>
+<p id="p9"></p>
+<a id="a3"  style="font-size:20px; color:#0080ff;" href="http://smekker.ga/hrusca-pusca.html">HRUSCA PUSCA</a>
+<p id="p10" style="color:#8cff66; font-size:17px;">html source:</p>
+<a id="a4" style="font-size:20px; color:lime;" href="http://smekker.ga/floppy/">FLOPPY</a>
+<script>
+var i;
+i = 2;
+function sleep(milliseconds) {
+  const date = Date.now();
+  let currentDate = null;
+  do {
+    currentDate = Date.now();
+  } while (currentDate - date < milliseconds);
+}
+function changeTitleGA() {
+  document.getElementById("title").innerHTML = "smekker.ga";
+  document.getElementById("h1").innerHTML = "This is the smekker.ga test page";
+}
+function changeTitleGO() {
+  document.getElementById("title").innerHTML = "smekker.go.ro";
+  document.getElementById("h1").innerHTML = "This is the smekker.go.ro test page";
+}
+function titleMovmento() {
+  i++;
+  if (i%2==0) {
+     changeTitleGA();
+  }
+  else
+  {
+     changeTitleGO();
+  }
+}
+</script>
+</body>
+</html>
