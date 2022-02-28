@@ -1,12 +1,11 @@
 
 <!DOCTYPE html>
-<html>
-<head>
-<title id="title" >SMEKKER.GA TEST PAGE</title>
-</head>
-<body>
-<canvas id="HUDcanvas" width="200" height="500" style="border:6px solid #000000"></canvas>
+<html><head>
+<title id="title">mekker ti-a luat ip-ul</title>
 <style>
+#HUDcanvas {
+  background-image: url('canvas.bmp');
+}
 body {
   background-image: url('coffee-bean.bmp');
 }
@@ -34,16 +33,6 @@ h2 {
   left: 10px;
   top: 520px;
 }
-#p4 {
-  position: absolute;
-  left: 10px;
-  top: 540px;
-}
-#p5 {
-  position: absolute;
-  left: 10px;
-  top: 560px;
-}
 #p2 {
   position: absolute;
   left: 222px;
@@ -54,94 +43,162 @@ h3 {
   left: 15px;
   top: 40px;
 }
-#a1 {
-  position: absolute;
-  left: 15px;
-  top: 75px;
-}
-#p6 {
-  position: absolute;
-  left: 15px;
-  top: 100px;
-}
-#testmail {
-  position: absolute;
-  left: 15px;
-  top: 110px;
-}
-#p7 {
-  position: absolute;
-  left: 15px;
-  top: 130px;
-}
-#testpass {
-  position: absolute;
-  left: 15px;
-  top: 140px;
-}
 #a2 {
   position: absolute;
   left: 15px;
-  top: 170px;
+  top: 125px;
 }
 #a3 {
   position: absolute;
   left: 15px;
-  top: 190px;
-}
-#p10 {
-  position: absolute;
-  left: 15px;
-  top: 200px;
+  top: 100px;
 }
 #a4 {
   position: absolute;
   left: 15px;
-  top: 230px;
+  top: 80px;
 }
 #b1 {
   position: absolute;
   left: 15px;
   top: 505px;
 }
-</style>
-
-<h1 id="h1" style="color:yellow;" >This is the smekker.ga test page</h1>
-<p id="p1" style="color:yellow;" >Attention some links include the HTTPS protocol</p>
-<p id="p2" style="color:yellow;" >ALL OF OUR HTTPS HAVE SELF-SIGNED CERTIFICATE SO THEY MAY APPEAR AS UNSAFE</p>
-<h2 style="color:red; font-size:16px;" >CURRENT IP:86.126.244.97</h2>
-<p id="p3" style="color:red; font-size:15px;" >if smekker.ga is offline try smekker.go.ro</p>
-<p id="p4" style="color:red; font-size:15px;" >URGENT DOWNAGE REPORTS: mekkerdavid@gmail.com</p>
-<p id="p5" style="color:red; font-size:15px;" >SERVER SUGGESTIONS AND BUG REPORTING: smekker11@smekker.ga</p>
-<button id="b1" style="size:50px;" type="button" onclick='titleMovmento();'>titleMovmento();</button>
-<h3 style="color:orange; font-size:16px;" >IMPORTANT LINKS:</h3>
-<a id="a1"  style="font-size:20px; color:orange;" href="https://smekker.ga:778">SMEKKER.GA MAIL</a>
-<p id="p6" style="font-size:12px; color:orange;" >DEFAULT TEST LOGIN FOR MAIL:</p>
-<p id="testmail" style="font-size:12px; color:orange;">test@smekker.ga</p>
-<p id="p7" style="font-size:12px; color:orange;" >DEFAULT TEST PASSWORD:</p>
-<p id="testpass" style="font-size:12px; color:orange;">Smekker@mail710</p>
-<a id="a2" style="color:#8cff66; font-size:14px" href="https://smekker.ga:420">iDRAC DELL MANAGEMENT</a>
-<p id="p9"></p>
-<a id="a3"  style="font-size:20px; color:#0080ff;" href="http://smekker.ga/hrusca-pusca.html">HRUSCA PUSCA</a>
-<p id="p10" style="color:#8cff66; font-size:17px;">html source:</p>
-<a id="a4" style="font-size:20px; color:lime;" href="http://smekker.ga/floppy/">FLOPPY</a>
-<script>
-var i;
-i = 3;
-function sleep(milliseconds) {
-  const date = Date.now();
-  let currentDate = null;
-  do {
-    currentDate = Date.now();
-  } while (currentDate - date < milliseconds);
+#techP {
+  position: absolute;
+  left: 15px;
+  top: 330px;
 }
+#arm {
+  position: absolute;
+  left: 15px;
+  top: 380px;
+}
+#dell {
+  position: absolute;
+  left: 70px;
+  top: 360px;
+}
+.introDIV {
+  position: absolute;
+  width: 700px;
+  height: 200px;
+  top: 100px;
+  left: 222px;
+}
+#mem {
+ position: absolute;
+ top: 480px;
+ left: 15px;
+}
+#raul {
+ position: absolute;
+ top: 10px;
+ left: 850px;
+ opacity: 0;
+}
+#ip-tr {
+position: absolute;
+ top: 520px;
+ left: 350px;
+ opacity: 0;
+}
+#kocka {
+ position: absolute;
+ top: 50px;
+ left: 550px;
+ opacity: 0;
+}
+#alex {
+ position: absolute;
+ top: 1000px;
+ left: 1px;
+ opacity: 0;
+}
+#marq {
+ position: absolute;
+ top: 2px;
+ opacity: 0;
+}
+#ARTIKOLcanvas {
+ background-image: url('fsd.png');
+ position: absolute;
+ top: 138px;
+ left: 225px;
+ opacity: 1;
+}
+#sus {
+ position: absolute;
+ top: 143px;
+ left: 230px;
+ opacity: 1;
+}
+#attn {
+ position: absolute;
+ top: 183px;
+ left: 600px;
+ opacity: 1;
+}
+#art {
+ opacity: 1;
+}
+#aip {
+ position: absolute;
+ top: 140px;
+ left: 16px;
+}
+</style>
+</head>
+<body>
+<canvas id="HUDcanvas" width="200" height="500" style="border: 6px solid rgb(0, 0, 0);"></canvas>
+<h1 id="h1" style="color: yellow;">sus bus amogus funeee mekk.ga</h1>
+<p id="p1" style="color: yellow;">Attention some links include the
+HTTPS protocol</p>
+<p id="p2" style="color: yellow;">NO BUDGET FOR HTTPS WE MAY BE BIBRUXZ</p>
+<h2 style="color: black; font-size: 15px;">
+<?php
+$ip = $_SERVER['REMOTE_ADDR'];
+$moment = date("H:i:s | d/m/Y");
+echo "IP IS: ";
+echo  $ip;
+$logstrem = fopen("log.txt", "a");
+fwrite($logstrem, "IP: $ip || MOMENT OF REQUEST: $moment \n");
+?>
+</h2>
+<p id="p3" style="color: red; font-size: 25px;">O sa imi pierd toti banii la pacanele pentru ca saracia face omul. - D$<button id="b1" style="size: 50px;" type="button" onclick="titleMovmento();">titleMovmento();</button>
+<button id="mem" onclick="merm();">Free Download</button>
+<h3 style="color: orange; font-size: 16px;">PAGE LINKS:</h3>
+<a id="a2" style="color: rgb(140, 255, 102); font-size: 14px;" href="https://smekker.go.ro:420">iDRAC</a>
+<a id="a3" style="font-size: 20px; color: rgb(0, 128, 255);" href="http://smekker.go.ro/old-home/hrusca-pusca">HRUSCA $<a id="aip" style="font-size 20px; color: black;" href="log.txt">IP LOG</a>
+<a id="a4" style="font-size: 20px; color: lime;" href="https://github.com/Smekker11/smekker.go.ro">GITHUB</a>
+<p id="techP" style="color: black; font-size: 16px;">Powered by:</p>
+<img id="arm" src="arm.jpg" alt="arm" height="50" width="50">
+<img id="dell" src="dell.png" alt="dell" height="100" width="100">
+<!-- sa fim seriosi -->
+<img id="raul" src="raul.png"></img>
+<img id="ip-tr" src="ip.png"></img>
+<img id="kocka" src="kocka_kep.gif"></img>
+<img id="alex" src="extra-wide-alex.jpg"></img>
+<!--okbin artikol-->
+<canvas id="ARTIKOLcanvas" width="600" height="390" style="border: 2px solid rgb(0, 0, 0);"></canvas>
+<p width="20" height="10" id="art" style="position: absolute; color: black; background-color: green; top: 380px; left:$<p width="20" height="10" id="art" style="position: absolute; color: black; background-color: green; top: 395px; left:$<p width="20" height="10" id="art" style="position: absolute; color: black; background-color: green; top: 410px; left:$<p width="20" height="10" id="art" style="position: absolute; color: black; background-color: green; top: 425px; left:$<p width="20" height="10" id="art" style="position: absolute; color: black; background-color: green; top: 440px; left:$<p width="20" height="10" id="art" style="position: absolute; color: black; background-color: green; top: 455px; left:$<img id="sus"  src="amgus.jpg" width="370" height="240"></img>
+<img id="attn" width="200" height="200" src="attn.gif"></img>
+<div class="introDIV">
+<p style="color: yellow;" > binbus OPEN CMD TYPE "NSLOOKUP" india paki paki tuk tuk</p>
+<marquee id="marq" style="color: red;" bgcolor="yellow">mem.mp4 ALERT NO DOWNLOAD PUNJABI VIBRUZ</marquee>
+<!-- binbus mem img-->
+</div>
+
+<script>
+<!-- bubton script -->
+var i;
+i = 2;
 function changeTitleGA() {
-  document.getElementById("title").innerHTML = "smekker.ga";
-  document.getElementById("h1").innerHTML = "This is the smekker.ga test page";
+  document.getElementById("title").innerHTML = "plic-punkga???";
+  document.getElementById("h1").innerHTML = "plic-punkga??? schitzofrenie";
 }
 function changeTitleGO() {
   document.getElementById("title").innerHTML = "smekker.go.ro";
-  document.getElementById("h1").innerHTML = "This is the smekker.go.ro test page";
+  document.getElementById("h1").innerHTML = "aparent smekk.go.ro SC RCS RDS SRL <3.";
 }
 function titleMovmento() {
   i++;
@@ -153,6 +210,24 @@ function titleMovmento() {
      changeTitleGO();
   }
 }
+</script> 
+
+<!-- binbus mem scriptt -->
+<script>
+function merm() {
+ document.getElementById("marq").style.opacity = 1;
+ document.getElementById("raul").style.opacity = 1;
+ document.getElementById("ip-tr").style.opacity = 1;
+ document.getElementById("alex").style.opacity = 1;
+ document.getElementById("kocka").style.opacity = 1;
+ document.getElementsById("art").style.opacity = 0;
+ document.getElementsById("sus").style.opacity = 0;
+ document.getElementsById("attn").style.opacity = 0;
+ document.getElementsById("ARTIKOLcanvas").style.opacity = 0;
+}
 </script>
-</body>
-</html>
+</body></html
+
+
+
+  
