@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html><head>
+<title id="title">SMEKKER.GA TEST PAGE</title>
+<style>
+#HUDcanvas {
+  background-image: url('canvas.bmp');
+}
+body {
+  background-image: url('coffee-bean.bmp');
+}
+h1 {
+  position: absolute;
+  left: 222px;
+  top: 0px;
+}
+canvas {
+  position: absolute;
+  top: 20px;
+}
+#p1 {
+  position: absolute;
+  left: 222px;
+  top: 40px;
+}
+h2 {
+  position: absolute;
+  left: 15px;
+  top: 20px;
+}
+#p3 {
+  position: absolute;
+  left: 10px;
+  top: 520px;
+}
+#p4 {
+  position: absolute;
+  left: 10px;
+  top: 540px;
+}
+#p5 {
+  position: absolute;
+  left: 10px;
+  top: 560px;
+}
+#p2 {
+  position: absolute;
+  left: 222px;
+  top: 60px;
+}
+h3 {
+  position: absolute;
+  left: 15px;
+  top: 40px;
+}
+#a1 {
+  position: absolute;
+  left: 15px;
+  top: 75px;
+}
+#p6 {
+  position: absolute;
+  left: 15px;
+  top: 100px;
+}
+#testmail {
+  position: absolute;
+  left: 15px;
+  top: 110px;
+}
+#p7 {
+  position: absolute;
+  left: 15px;
+  top: 130px;
+}
+#testpass {
+  position: absolute;
+  left: 15px;
+  top: 140px;
+}
+#a2 {
+  position: absolute;
+  left: 15px;
+  top: 170px;
+}
+#a3 {
+  position: absolute;
+  left: 15px;
+  top: 190px;
+}
+#p10 {
+  position: absolute;
+  left: 15px;
+  top: 200px;
+}
+#a4 {
+  position: absolute;
+  left: 15px;
+  top: 230px;
+}
+#b1 {
+  position: absolute;
+  left: 15px;
+  top: 505px;
+}
+#techP {
+  position: absolute;
+  left: 15px;
+  top: 330px;
+}
+#arm {
+  position: absolute;
+  left: 15px;
+  top: 380px;
+}
+#dell {
+  position: absolute;
+  left: 70px;
+  top: 360px;
+}
+.introDIV {
+  position: absolute;
+  width: 700px;
+  height: 200px;
+  top: 100px;
+  left: 222px;
+}
+  </style>
+</head><body>
+<canvas id="HUDcanvas" width="200" height="500" style="border: 6px solid rgb(0, 0, 0);"></canvas>
+<h1 id="h1" style="color: yellow;">This is the smekker.ga home page</h1>
+<p id="p1" style="color: yellow;">Attention some links include the
+HTTPS protocol</p>
+<p id="p2" style="color: yellow;">ALL OF OUR HTTPS HAVE SELF-SIGNED
+CERTIFICATE SO THEY MAY APPEAR AS UNSAFE</p>
+<h2 style="color: black; font-size: 15px;">CURRENT IP:</h2>
+<p id="p3" style="color: red; font-size: 15px;">if smekker.ga is
+offline try smekker.go.ro</p>
+<p id="p4" style="color: red; font-size: 15px;">URGENT DOWNAGE REPORTS:
+<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2548404e4e40574144534c41654248444c490b464a48">[email&#160;protected]</a></p>
+<p id="p5" style="color: red; font-size: 15px;">SERVER SUGGESTIONS AND
+BUG REPORTING: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2a59474f41414f581b1b6a59474f41414f58044d4b">[email&#160;protected]</a></p>
+<button id="b1" style="size: 50px;" type="button" onclick="titleMovmento();">titleMovmento();</button>
+<h3 style="color: orange; font-size: 16px;">IMPORTANT LINKS:</h3>
+<a id="a2" style="color: rgb(140, 255, 102); font-size: 14px;" href="https://smekker.go.ro:420">iDRAC DELL MANAGEMENT</a>
+<a id="a3" style="font-size: 20px; color: rgb(0, 128, 255);" href="http://smekker.ga/old-home/hrusca-pusca.php">HRUSCA PUSCA</a>
+<p id="p10" style="color: rgb(140, 255, 102); font-size: 17px;">html
+source:</p>
+<a id="a4" style="font-size: 20px; color: lime;" href="https://github.com/Smekker11/smekker.go.ro">GITHUB</a>
+<p id="techP" style="color: black; font-size: 16px;">Powered by:</p>
+<img id="arm" src="arm.jpg" alt="arm" height="50" width="50">
+<img id="dell" src="dell.png" alt="dell" height="100" width="100">
+<div class="introDIV">
+<p style="color: yellow;">We host different kinds of services like: our
+smtp mail server and various management interfaces that are present on
+this website.</p>
+<h2 style="color: yellow; font-size: 15px; top: 170px; left: 172px;">INTERNET RELAY CHAT: <a href="https://kiwiirc.com/client?settings=0119311a4390b9634cf98d2e64ee34a2" style="color: lime; font-size: 15px;">HERE</a></h2>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+var i;
+i = 2;
+function sleep(milliseconds) {
+  const date = Date.now();
+  let currentDate = null;
+  do {
+    currentDate = Date.now();
+  } while (currentDate - date < milliseconds);
+}
+function changeTitleGA() {
+  document.getElementById("title").innerHTML = "smekker.ga";
+  document.getElementById("h1").innerHTML = "This is the smekker.ga test page";
+}
+function changeTitleGO() {
+  document.getElementById("title").innerHTML = "smekker.go.ro";
+  document.getElementById("h1").innerHTML = "This is the smekker.go.ro test page";
+}
+function titleMovmento() {
+  i++;
+  if (i%2==0) {
+     changeTitleGA();
+  }
+  else
+  {
+     changeTitleGO();
+  }
+}
+</script>
+</body></html>
+
