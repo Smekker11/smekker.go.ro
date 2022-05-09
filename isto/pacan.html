@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>hrusca-pusca</title>
+</head>
+<body>
+<h1 style="color: yellow;">HRUSCA PUSCA</h1>
+<canvas id="pacanHUD" height="400" width="800" style="border: 15px solid black;"></canvas>
+<button id="but" type="button" onclick="pacan();">spin!</button>
+<p id="rand">oki</p>
+<img id="a1" height="90" width="90" src="nimc.jpg"></img>
+<img id="b1" height="90" width="90" src="nimc.jpg"></img>
+<img id="c1" height="90" width="90" src="nimc.jpg"></img>
+<img id="a2" height="90" width="90" src="nimc.jpg"></img>
+<img id="b2" height="90" width="90" src="nimc.jpg"></img>
+<img id="c2" height="90" width="90" src="nimc.jpg"></img>
+<img id="a3" height="90" width="90" src="nimc.jpg"></img>
+<img id="b3" height="90" width="90" src="nimc.jpg"></img>
+<img id="c3" height="90" width="90" src="nimc.jpg"></img>
+<button id="m20"  type="button" onclick="m20();">miza 20</button>
+<button id="m200" type="button" onclick="m200();">miza 200</button>
+<button id="m500" type="button" onclick="m500();">miza 500</button>
+<p id="miza" style="position: absolute; top: 400px; left: 50px; font-size: 25px;">miza: 20</p>
+<p style="position: absolute; top: 400px; left: 180px; font-size: 25px;">credit:</p>
+<p id="credit" style="position: absolute; top: 400px; left: 250px; font-size: 25px;">5000</p>
+<script>
+var credit = 5000;
+var nmiz = 20;
+var winsml = new Audio('winsml.mp3');
+var winbig = new Audio('winbig.mp3');
+function m20(){
+ nmiz = 20;
+ document.getElementById("miza").innerHTML = "miza: 20";
+}
+function m200(){
+ nmiz = 200;
+ document.getElementById("miza").innerHTML = "miza: 200";
+}
+function m500(){
+ nmiz = 500;
+ document.getElementById("miza").innerHTML = "miza: 500";
+}
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+function pacan() {
+var n1,n2,n3,n4,n5,n6,n7,n8,n9;
+n1 = getRndInteger(0,9);
+n2 = getRndInteger(0,9);
+n3 = getRndInteger(0,9);
+n4 = getRndInteger(0,9);
+n5 = getRndInteger(0,9);
+n6 = getRndInteger(0,9);
+n7 = getRndInteger(0,9);
+n8 = getRndInteger(0,9);
+n9 = getRndInteger(0,9);
+//pt n1
+if (n1==1||n1==6){
+    document.getElementById("a1").src="lemon.png";
+	
+if (n1==2){
+    document.getElementById("a1").src="seven.png";
+}
+if (n1==3||n1==9){
+    document.getElementById("a1").src="plum.png";
+}
+if (n1==7||n1==0){
+    document.getElementById("a1").src="orange.jpg";
+}
+if(n1==4||n1==5||n1==8){
+    document.getElementById("a1").src="cherry.jpg";
+}
+credit = credit - nmiz;
+document.getElementById('credit').innerHTML = credit;
+}
+</script>
+<style>
+#pacanHUD {
+ position: absolute;
+ background-image: url('canvas_pacan.bmp')
+}
+#but {
+ position: absolute;
+ background-color: green;
+ border: 4px;
+ border-color: black;
+ color: red;
+ padding: 15px 385px;
+ text-align: center;
+ display: inline-block;
+ font-size: 16px;
+ margin: 4px 2px;
+ cursor: pointer;
+ top: 444px;
+ left: 20px;
+}
+#rand {
+ position: absolute;
+ top: 90px;
+ left : 700px;
+ font-size: 16px;
+}
+#n1{
+ position: absolute;
+ top: 500px;
+}
+#n2{
+ position: absolute;
+ top: 550px;
+}
+#n3{
+ position: absolute;
+ top: 600px;
+}
+#n4{
+ position: absolute;
+ top: 650px;
+}
+#n5{
+ position: absolute;
+ top: 700px;
+}
+#n6{
+ position: absolute;
+ top: 750px;
+}
+#n7{
+ position: absolute;
+ top: 800px;
+}
+#n8{
+ position: absolute;
+ top: 850px;
+}
+#n9{
+ position: absolute;
+ top: 900px;
+}
+#n0{
+ position: absolute;
+ top: 950px;
+}
+#a1{
+ position: absolute;
+ top: 140px;
+ left: 200px;
+}
+#b1{
+ position: absolute;
+ top: 140px;
+ left: 290px;
+}
+#c1{
+ position: absolute;
+ top: 140px;
+ left: 380px;
+}
+#a2{
+ position: absolute;
+ top: 230px;
+ left: 200px;
+}
+#b2{
+ position: absolute;
+ top: 230px;
+ left: 290px;
+}
+#c2{
+ position: absolute;
+ top: 230px;
+ left: 380px;
+}
+#a3{
+ position: absolute;
+ top: 320px;
+ left: 200px;
+}
+#b3{
+ position: absolute;
+ top: 320px;
+ left: 290px;
+}
+#c3{
+ position: absolute;
+ top: 320px;
+ left: 380px;
+}
+#m20{
+ position: absolute;
+ top: 200px;
+ left: 20px;
+}
+#m200{
+ position: absolute;
+ top: 220px;
+ left: 20px;
+}
+#m500{
+ position: absolute;
+ top: 240px;
+ left: 20px;
+}
+</style>
+</body>
+</html>
